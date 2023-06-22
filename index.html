@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+
+        </style>
+        <script>
+
+        </script>
+    </head>
+    <body>
+
+
+        <script>
+            // Function defination
+            // proper naming convention
+            // i.e function names are always in camelcase
+
+            function myFunctionA(x,y){   // x and y is a formal argument/perameter
+                // function body
+                return x+y;
+            }
+
+            // function invoke/call     invoking / calling
+
+            let result = myFunctionA(10,30);
+            console.log(result);
+
+            // functin as argument
+
+            let r2 = myFunctionA(10,myFunctionA(10,30));
+            console.log(r2);
+
+            // function as deep nested calling
+
+            let r3 = myFunctionA(10,myFunctionA(myFunctionA(10,30),30));
+            console.log(r3);
+
+
+            function a(){
+                return 10;
+            }
+            function b(){
+                return 20;
+            }
+            function c(x,y){  // formal argument/perameter
+                return x+y;
+            }
+
+            let z = c(a(),b());
+            console.log(z);
+            
+
+
+        </script>
+    </body>
+</html>
